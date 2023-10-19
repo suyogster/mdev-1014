@@ -1,9 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, View } from 'react-native';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Button title='Layout 1' onPress={() => {}} />
+      <Button title='Layout 2' onPress={() => {}} />
+      <Button title='Layout 3' onPress={() => {}} />
+      <Button title='Layout 4' onPress={() => {}} />
+      <Button title='Layout 5' onPress={() => {}} />
+      <Button title='Layout 6' onPress={() => {}} />
     </View>
   );
 }
