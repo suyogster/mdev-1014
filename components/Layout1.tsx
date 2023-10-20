@@ -1,7 +1,11 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function Layout1() {
-  return <View style={styles.container}></View>;
+export default function Layout1({ navigation }: any) {
+  return (
+    <View style={styles.container}>
+      <Text style={{ color: 'black' }}>Hello</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
