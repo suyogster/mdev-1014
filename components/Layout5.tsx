@@ -39,7 +39,7 @@ const onClicking=(key:any)=>{
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:'lightblue',
+        backgroundColor:'grey',
         paddingHorizontal:20
     },
     text:{
