@@ -39,7 +39,7 @@ const onClicking=(key:any)=>{
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:'grey',
+        backgroundColor:'black',
         paddingHorizontal:20
     },
     text:{
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
         padding:30,
         marginTop:24,
         paddingTop:16,
-        backgroundColor:'pink',
+        backgroundColor:'#fff',
         fontSize:24
         
         
