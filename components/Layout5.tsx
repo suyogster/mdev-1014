@@ -1,59 +1,60 @@
-import React from "react";
-import { SafeAreaView, Text, View, StyleSheet, Button, Alert, TouchableOpacity} from "react-native";
+import React, { useState } from "react";
+import { SafeAreaView, Text, View, StyleSheet,TouchableOpacity, FlatList} from "react-native";
 
-const Flexboxtry =()=>
+export default function Flexbox()
 {
+    const [myList,setmyList]=useState([
+        {text:'Morning Walk',key:'1'},
+        {text:'Washing car',key:'2'},
+        {text:'Cook Food',key:'3'},
+        {text:'Do Assignments',key:'4'},
+        {text:'Pay Bills',key:'5'},
+        {text:'Attend Meetings',key:'6'},
+        {text:'Pick-up Order',key:'7'},
+        {text:'Make Shake',key:'8'},
+        {text:'Gyming',key:'9'},
+        {text:'Making Diet',key:'10'},
+        {text:'Watch Netflix',key:'11'},
+        {text:'Sleep',key:'12'},
+    ])
+const onClicking=(key:any)=>{
+    console.log(key)
+}
+    
     return(
-        <SafeAreaView style = { styles.wrapper}>
-           <View style = {styles.box1}>
-            <Text onPress={()=>(console.log("First box clicked"))}>First Box</Text>
-           </View>
-           <View style = {styles.box2}>
-            <Button title='Second Box' onPress={()=>Alert.alert('Attention','Button pressed')}></Button>
-           </View>
-           <View style = {styles.box3}>
-            <TouchableOpacity onPress={()=>{console.log('Inside Box 3')
-            Alert.alert('Attention', 'Last Box?',[
-                {text:'Yes',onPress:()=>console.log("Yes clicked")},
-                {text:'No',onPress:()=>console.log('No clicked')}
-            ])
-            }}>
-<Text>Third Box</Text>
+        <View style = {styles.container}>
+            <Text style = {styles.text}>My List</Text>
+        <View>
+        <FlatList
+        data={myList}
+        renderItem={({item})=>(
+            <TouchableOpacity onPress={()=>onClicking(item.key)}>
+            <Text style = {styles.list}>{item.text}</Text>
             </TouchableOpacity>
-           </View>
-        </SafeAreaView>
+        )}></FlatList>
+        </View>
+        </View>
     )
 }
-
 const styles = StyleSheet.create({
-    wrapper:
-    {
+    container:{
         flex:1,
         backgroundColor:'lightblue',
-        flexDirection:'row',
-        alignItems:'center',
-        justifyContent:'space-evenly'
+        paddingHorizontal:20
     },
-    box1:
-    {
-        height:100,
-        width:100,
-        backgroundColor:"orange"
+    text:{
+        fontSize:20,
+       textAlign:'center',
     },
-    box2:
-    {
-        height:100,
-        width:100,
-        backgroundColor:'red',
-        position:'relative',
-        top: 200,
-        left:50
-    },
-    box3:
-    {
-        height:100,
-        width:100,
-        backgroundColor:'purple'
+    list:{
+        padding:30,
+        marginTop:24,
+        paddingTop:16,
+        backgroundColor:'pink',
+        fontSize:24
+        
+        
     }
 })
-export default Flexboxtry
+
+ 
