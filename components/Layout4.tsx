@@ -5,7 +5,7 @@ export default function Layout4() {
   return (
   <View style={styles.container}>
     <View style={styles.header}>
-      <Text>Hello, World!</Text>
+      <Text>Hello, World from Chandrika!</Text>
     </View>
   </View>
   );
