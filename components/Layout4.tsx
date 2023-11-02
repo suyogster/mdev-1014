@@ -1,7 +1,14 @@
-import { StyleSheet, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
 
 export default function Layout4() {
-  return <View style={styles.container}></View>;
+  return (
+  <View style={styles.container}>
+    <View style={styles.header}>
+      <Text>Hello, World!</Text>
+    </View>
+  </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -11,4 +18,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  header: {
+    backgroundColor: 'pink',
+    padding: 20,
+  },
+  boldText: {
+    fontWeight: 'bold',
+  }
 });
+``
