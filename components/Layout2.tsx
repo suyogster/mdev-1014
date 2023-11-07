@@ -22,25 +22,25 @@ export default function Layout2() {
       <View>
         <TouchableOpacity onPress={() => btn(1)} style={{}}>
           <View style={styles.mainBox}>
-            <Text style={styles.text}>Button 1</Text>
+            <Text style={styles.text}>1</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => btn(2)} style={{}}>
           <View style={styles.mainBox}>
-            <Text style={styles.text}>Button 2</Text>
+            <Text style={styles.text}>2</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => btn(3)} style={{}}>
           <View style={styles.mainBox}>
-            <Text style={styles.text}>Button 3</Text>
+            <Text style={styles.text}>3</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => btn(4)} style={{}}>
           <View style={styles.mainBox}>
-            <Text style={styles.text}>Button 4</Text>
+            <Text style={styles.text}>4</Text>
           </View>
         </TouchableOpacity>
       </View>
