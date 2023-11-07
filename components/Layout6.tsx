@@ -102,8 +102,6 @@ export default function Layout6({ navigation }: any) {
           >
             <Text style={styles.btnText}>Previous</Text>
           </TouchableOpacity>
-
-          <Text>{counter}</Text>
         </View>
         <View
           style={{
