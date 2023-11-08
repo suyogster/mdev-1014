@@ -1,8 +1,11 @@
-import { Button, StyleSheet, View } from 'react-native';
+import { Button, StyleSheet, View, Text } from 'react-native';
 
 export default function Home({ navigation }: any) {
   return (
     <View style={styles.container}>
+      <Text style={{ fontSize: 25, fontWeight: 'bold', marginBottom: 40 }}>
+        MDEV-1014 - Assignment 1
+      </Text>
       <Button
         color={'red'}
         title='Suyog Shrestha - 200565523 - Layout 1'
